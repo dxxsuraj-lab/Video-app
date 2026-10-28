@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="12dp"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#101318">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Video Gallery Pro" android:textColor="#FFFFFF"
+        android:textSize="24sp" android:textStyle="bold" android:padding="8dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/allButton" android:layout_width="0dp"
+            android:layout_weight="1" android:layout_height="wrap_content" android:text="All videos"/>
+        <Button android:id="@+id/favButton" android:layout_width="0dp"
+            android:layout_weight="1" android:layout_height="wrap_content" android:text="♥ Favourites"/>
+    </LinearLayout>
+    <TextView android:id="@+id/statusText" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textColor="#D0D5DD"
+        android:padding="8dp" android:text="Loading videos…"/>
+    <GridView android:id="@+id/videoGrid" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"
+        android:numColumns="2" android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp" android:stretchMode="columnWidth"
+        android:gravity="center" android:clipToPadding="false"/>
+</LinearLayout>
